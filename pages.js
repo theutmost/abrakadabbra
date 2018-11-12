@@ -21,12 +21,12 @@ const pages = [
     circle: "#3e78ed"
   },
   {
-    copy: "is the biggest Houdini fan",
+    copy: "the biggest Houdini fan",
     background: "#a1fffe",
     circle: "#e34a47"
   },
   {
-    copy: "looking for new entertainment opps starting 2019",
+    copy: "open for new magic shows starting 2019",
     background: "#d3c7f3",
     circle: "#f7fe00"
   },
