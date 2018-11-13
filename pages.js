@@ -125,3 +125,19 @@ randomTag.addEventListener("click", function() {
 
   random();
 });
+
+// ------ KEYUP ARROWS FUNCTIONALITY ------------------
+
+document.addEventListener("keyup", function(event) {
+  // EVENT bc we are waiting for specific key-event press
+
+  if (event.key == "ArrowRight") {
+    //event.key sources to key #/name (checked via console log event)
+    next();
+  }
+
+  if (event.key == "ArrowLeft") {
+    //event.key sources to key #/name (checked via console log event)
+    previous();
+  }
+});
