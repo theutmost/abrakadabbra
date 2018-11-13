@@ -52,8 +52,10 @@ const pagesS = [
 
 //getting Next button/img
 const nextTag = document.querySelector("footer img.next");
-//getting Next button/img
+//getting Prev button/img
 const prevTag = document.querySelector("footer img.prev");
+//getting Random button/img
+const randomTag = document.querySelector("footer img.random");
 //the change, grabbing h2 tag from doc
 const outputTag = document.querySelector("h2");
 //the change, grabbing circle tag from doc
@@ -85,6 +87,12 @@ const previous = function() {
   updateSection(); // explained below
 };
 
+//pick a random slide
+const random = function() {
+  pageNumber = Math.floor(Math.random() * pages.length);
+  updateSection();
+};
+
 const updateSection = function() {
   // when i only had an ARRAY OF STRINGS
   // outputTag.innerHTML = pages[pageNumber]; // getting ea item in ARRAY to show upon a click
@@ -104,9 +112,16 @@ nextTag.addEventListener("click", function() {
   next();
 });
 
-// when we click the Next tag, change something (doesn't matter what it is atm)
+// when we click the Prev tag, change something (doesn't matter what it is atm)
 prevTag.addEventListener("click", function() {
   // outputTag.innerHTML = "it worked"; // testing that h2 change works!
 
   previous();
+});
+
+// on click the Random tag, change something (doesn't matter what it is atm)
+randomTag.addEventListener("click", function() {
+  // outputTag.innerHTML = "it worked"; // testing that h2 change works!
+
+  random();
 });
